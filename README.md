@@ -13,6 +13,15 @@ and activate the virtual environment
 install IOPaint
 `pip3 install iopaint`
 
+## With uv
+
+```
+uv venv
+uv python pin cpython-3.10.16-linux-x86_64-gnu
+source ./.venv/bin/activate
+uv pip install iopaint
+```
+
 - In order to use GPU, install cuda version of pytorch first.
 - pip3 install torch==2.1.2 torchvision==0.16.2 --index-url https://download.pytorch.org/whl/cu118
 - AMD GPU users, please utilize the following command, only works on linux, as pytorch is not yet supported on Windows with ROCm.
